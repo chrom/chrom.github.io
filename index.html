@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kottans</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<h1>POKEDEX</h1>
+<div id="container" class="col-md-8"></div>
+<aside id="item" class="col-md-4"></aside>
+<div class="row">
+    <template id="productrow">
+        <section class="item col-md-3">
+            <div class="thumbnail">
+                <img src="" alt="" class="thumbnail">
+                <div class="caption">
+                    <h3 class="name"></h3>
+                    <div class="id"></div>
+                    <div class="abilities btn-group" role="group"></div>
+                </div>
+            </div>
+        </section>
+    </template>
+</div>
+<div class="col-md-8 wrapper">
+<button class="btn btn-primary btn-lg btn-block">Load more</button>
+</div>
+<div class="row">
+    <template id="entity">
+        <section class="entity col-md-7">
+            <div class="thumbnail">
+                <img src="" alt="" class="thumbnail">
+                <div class="caption">
+                    <h3 class="name"></h3>
+                    <table class="table table-hover">
+                        <tr>
+                            <td>Type</td>
+                            <td><span class="type"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Attack</td>
+                            <td><span class="attack"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Defence</td>
+                            <td><span class="defence"></span></td>
+                        </tr>
+                        <tr>
+                            <td>HP</td>
+                            <td><span class="hp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>SP Attack</td>
+                            <td><span class="sp_atk"></span></td>
+                        </tr>
+                        <tr>
+                            <td>SP Defence</td>
+                            <td><span class="sp_def"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Speed</td>
+                            <td><span class="speed"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td><span class="weight"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total moves</td>
+                            <td><span class="moves"></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </template>
+</div>
+<div class="loading">
+    <div class="cssload-thecube">
+        <div class="cssload-cube cssload-c1"></div>
+        <div class="cssload-cube cssload-c2"></div>
+        <div class="cssload-cube cssload-c4"></div>
+        <div class="cssload-cube cssload-c3"></div>
+    </div>
+</div>
+</body>
+</html>
